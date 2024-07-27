@@ -50,7 +50,7 @@ function get_weather(){
     city = city.toLowerCase();
     if(city!=""){
     input.value = "";
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`
     fetch(url)
     .then(response=>{
         if(response.status==200){
