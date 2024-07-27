@@ -40,6 +40,7 @@ function show_data(data){
     info.appendChild(m_div);
     info.appendChild(ws_div);
     info.appendChild(wd_div);
+    console.log("Function completed successfully");
 }
 
 function get_weather(){
@@ -54,6 +55,7 @@ function get_weather(){
     .then(response=>{
         if(response.status==200){
             return response.json()
+            console.log("JSON converted successfully")
         }else{
             info.innerHTML = "Error ! ";
         }
